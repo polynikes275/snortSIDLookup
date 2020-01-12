@@ -14,6 +14,12 @@ Usage: Display Rules => ${0##*/} -p <priority number> -l <log file> -r <location
 	exit 1
 }
 
+# Checking to see if number of command line args is equal to zero, if so, display usage
+if (($# == 0))
+then
+Usage
+fi
+
 # Delimiter
 function delimiter()
 {
