@@ -27,7 +27,7 @@ function delimiter()
 function getUniqueSIDS()
 {
 	grep "Priority: $PRIORITY" $LOGFILE | cut -f 4 -d' ' | sort -n | uniq -c | awk -F'[' '{print $1,$2}' | awk -F']' '{print $1,$2}' | awk -F':' '{print $1,$2}' \
-		| awk -F' ' '{print "SID => " $3"\t Found => "$1}' ; exit	
+		| awk -F' ' '{print "SID => " $3"\t Occurrences => "$1}' ; exit	
 	
 }
 
