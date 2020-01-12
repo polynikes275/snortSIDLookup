@@ -79,11 +79,8 @@ ARG="$1"
 			Usage
 			;;
 		*)
-			for flag in "$CMDARGS"; do if [[ "$flag" != "$ARG" ]]
-			then
-			echo -e "\nUser entered an invalid flag => { $flag }\n"
-			fi
-			done
+			echo -e "\nUser entered one or more invalid flag(s)\n"
+                        Usage
 			exit
 			;;
 
