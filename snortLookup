@@ -5,8 +5,6 @@
 # The returned Snort IDs (SIDs) are then displayed
 # or are displayed with their corresponding Snort Rule.
 
-CMDARGS=${@:1}
-
 function Usage()
 {
 	echo -e "\nUsage: Display Unique SIDS => ${0##*/} -p <priority number>  -l <log file> -s sids <keyword to use>\n
