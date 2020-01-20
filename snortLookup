@@ -7,7 +7,7 @@
 
 function Usage()
 {
-	echo -e "\nUsage: Display Unique SIDS => ${0##*/} -p <priority number>  -l <log file> -s sids <keyword to use>\n
+	echo -e "\nUsage: Display Unique SIDS => ${0##*/} -p <priority number>  -l <log file> -s sids\n
 Usage: Display Rules => ${0##*/} -p <priority number> -l <log file> -r <location of snort rules>\n"
 	exit 1
 }
