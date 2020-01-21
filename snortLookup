@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Author: Jason Brewer
+# Author: Jason B
 # Written for parsing Snort logs based on Priority.
 # The returned Snort IDs (SIDs) are then displayed
 # or are displayed with their corresponding Snort Rule.
